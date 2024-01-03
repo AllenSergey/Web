@@ -1,0 +1,138 @@
+/* подключение новых шрифтов, уточнить правильно ли это, потому что хуйня полная обьективно */
+@font-face {
+  font-family: 'Roboto';
+  src: url('fonts/Roboto-Bold.ttf') format('truetype');
+}
+
+header { /* хедер */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 5px;
+}
+
+footer { /* футер */
+  font-family: Roboto;
+  background-color: #e3e3e3;
+  padding: 10px;
+  text-align: center;
+}
+
+/* стиль для меню хедера*/
+.menu { 
+    flex-grow: 1;
+}
+
+.menu ul { 
+    font-family: Roboto;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+    line-height: 18px;
+    list-style: none;
+}
+
+.menu li {
+    margin-right: 20px;
+  }
+  .menu li:last-child {
+    margin-right: 0;
+  }
+  .menu a {
+    text-decoration: none;
+    padding: 8px 10px;
+  }
+
+  .menu a:visited { 
+    color: inherit; /* сохраняем цвет, чтобы ссылка не была синей */
+  }
+
+.logo {
+    margin-right: 500px;
+    margin-left: 100px;
+}
+
+/* текст основной слева от картинки, разделен на блоки */
+.first {
+  display: flex;
+  justify-content: space-around;
+}
+
+.first-text {
+  font-family: Roboto;
+  font-size: x-large;
+  max-width: 35%;
+  margin-top: 100px;
+}
+
+/* кнопка скачать */
+.downbut button {
+  display: flex;
+  padding: 15px 60px;
+  font-size: 16px;
+  border: 2px solid #a4a4a4;
+  border-radius: 15px;
+}
+
+/* hover - событие, когда наводится на кнопку */
+.downbut button:hover {
+  background-color: #e3e3e3;
+}
+
+/* текст Наши преимущества и другие заголовки перед блоками */
+.opport {
+  display: flex;
+  justify-content: center;
+  font-family: Roboto;
+  margin-bottom: 25px;
+}
+
+/* Контейнер для контейнеров текста преимуществ */
+.block {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+/* скриншоты, оставил сверху вниз, во второй лабе придется поменять на карусельку, НЕ ЗАБЫТЬ! */
+.block-screens {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.screens img {
+  max-width: 50%;
+  display: block;
+  margin: 30px auto;
+}
+
+/* контейнер текста преимуществ */
+.text-block {
+  font-family: Roboto;
+  max-width: 30%;
+  border: 2px solid #a4a4a4;
+  border-radius: 10px;
+  box-shadow: 1px 1px 3px;
+}
+
+
+
+/* ТУТ ПОШЛИ КОНТЕЙНЕРЫ ДЛЯ play.html */
+
+.main-text {
+  display: flex;
+  justify-content: center;
+  font-family: Roboto;
+}
+
+.block-os {
+  font-family: Roboto;
+  max-width: 30%;
+  border: 2px solid #a4a4a4;
+  border-radius: 10px;
+  box-shadow: 1px 1px 3px;
+  list-style: none;
+}
