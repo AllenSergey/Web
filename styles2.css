@@ -17,6 +17,7 @@ footer { /* футер */
   background-color: #e3e3e3;
   padding: 10px;
   text-align: center;
+  margin-top: 50px;
 }
 
 /* стиль для меню хедера*/
@@ -165,3 +166,89 @@ footer { /* футер */
 
 /* ТУТ ПОШЛИ КОНТЕЙНЕРЫ ДЛЯ shop.html */
 
+.shop-blocks {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 225px);
+  width: 100%;
+  max-width: 1080px;
+  justify-content: center;
+  justify-items: center;
+  column-gap: 30px;
+  row-gap: 40px;
+  margin: 0 auto;
+}
+
+.shop-block {
+  top: 10px;
+  background-color: aliceblue;
+  width: 225px;
+  min-height: 350px;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  transition: 0.2s;
+  position: relative;
+  border-style: dashed;
+}
+
+.shop-image {
+  position: relative;
+  left: 0;
+  top: 0;
+}
+
+.shop-image img {
+  width: 100%;
+  height: 210px;
+  object-fit: contain; /*Встраиваем картинку в контейнер*/
+  transition: 0.2s;
+}
+
+.shop-image img:hover {
+  transform: scale(1.2);
+}
+
+.shop-block-bottom {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto; /*Занимаем всю оставшуюся высоту*/
+  padding: 10px;
+}
+
+.shop-block-title {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 17px;
+  font-style: italic;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 150%;
+  color: #414141;
+}
+
+.shop-block-title:hover {
+  color: #ff6633;
+}
+
+.buy
+{
+    display: block;
+    width: 100%;
+    font-weight: 400;
+    font-size: 17px;
+    color: #70c05b;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #70c05b;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: auto;
+    margin-bottom: 2px;
+    transition: 0.2s;
+}
+
+.buy:hover
+{
+    transform: scale(1.05);
+}
