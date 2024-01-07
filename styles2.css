@@ -128,11 +128,40 @@ footer { /* футер */
   font-family: Roboto;
 }
 
-.block-os {
+.block-play {
+  display: flex;
+  justify-content: space-around;
+}
+
+.block-play-text {
   font-family: Roboto;
   max-width: 30%;
   border: 2px solid #a4a4a4;
   border-radius: 10px;
-  box-shadow: 1px 1px 3px;
-  list-style: none;
+  text-align: center;
 }
+
+.block-play-text ul {
+  list-style: none;
+  padding: 10px;
+}
+
+.block-play-text img {
+  max-width: 50%;
+  padding: 10px;
+}
+
+.downlink {
+  display: flex;
+  justify-content: space-around;
+}
+
+.downlink img {
+  max-width: 25%;
+  display: block;
+  margin: 30px auto;
+}
+
+
+/* ТУТ ПОШЛИ КОНТЕЙНЕРЫ ДЛЯ shop.html */
+
