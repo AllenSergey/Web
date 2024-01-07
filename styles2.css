@@ -189,7 +189,7 @@ footer { /* футер */
   border-radius: 4px;
   transition: 0.2s;
   position: relative;
-  border-style: dashed;
+  border-style: solid;
 }
 
 .shop-image {
@@ -237,10 +237,10 @@ footer { /* футер */
     width: 100%;
     font-weight: 400;
     font-size: 17px;
-    color: #70c05b;
+    color: #000000;
     padding: 10px;
     text-align: center;
-    border: 1px solid #70c05b;
+    border: 1px solid #000000;
     border-radius: 4px;
     cursor: pointer;
     margin-top: auto;
@@ -251,4 +251,50 @@ footer { /* футер */
 .buy:hover
 {
     transform: scale(1.05);
+}
+
+/* ТУТ ПОШЛИ КОНТЕЙНЕРЫ ДЛЯ tp.html */
+
+.support-form-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+}
+
+select,
+textarea,
+input {
+  margin-bottom: 15px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
 }
