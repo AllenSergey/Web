@@ -1,4 +1,4 @@
-/* подключение новых шрифтов, уточнить правильно ли это, потому что хуйня полная обьективно */
+/* подключение новых шрифтов, уточнить правильно ли это, потому что  полная обьективно */
 @font-face {
   font-family: 'Roboto';
   src: url('fonts/Roboto-Bold.ttf') format('truetype');
@@ -55,6 +55,10 @@ footer { /* футер */
     margin-left: 100px;
 }
 
+.menu a:hover {
+  color: rgb(255, 104, 104);
+}
+
 /* текст основной слева от картинки, разделен на блоки */
 .first {
   display: flex;
@@ -73,13 +77,14 @@ footer { /* футер */
   display: flex;
   padding: 15px 60px;
   font-size: 16px;
-  border: 2px solid #a4a4a4;
+  background-color: rgb(255, 104, 104);
+  color: rgb(255, 255, 255);
   border-radius: 15px;
 }
 
 /* hover - событие, когда наводится на кнопку */
 .downbut button:hover {
-  background-color: #e3e3e3;
+  background-color: #ff9898;
 }
 
 /* текст Наши преимущества и другие заголовки перед блоками */
@@ -95,6 +100,8 @@ footer { /* футер */
   display: flex;
   justify-content: space-around;
   text-align: center;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 /* скриншоты, оставил сверху вниз, во второй лабе придется поменять на карусельку, НЕ ЗАБЫТЬ! */
@@ -116,7 +123,6 @@ footer { /* футер */
   max-width: 30%;
   border: 2px solid #a4a4a4;
   border-radius: 10px;
-  box-shadow: 1px 1px 3px;
 }
 
 
@@ -201,7 +207,7 @@ footer { /* футер */
 .shop-image img {
   width: 100%;
   height: 210px;
-  object-fit: contain; /*Встраиваем картинку в контейнер*/
+  object-fit: contain;
   transition: 0.2s;
 }
 
@@ -212,7 +218,7 @@ footer { /* футер */
 .shop-block-bottom {
   display: flex;
   flex-direction: column;
-  flex: 1 0 auto; /*Занимаем всю оставшуюся высоту*/
+  flex: 1 0 auto;
   padding: 10px;
 }
 
@@ -221,10 +227,10 @@ footer { /* футер */
   margin-bottom: 10px;
   font-weight: 400;
   font-size: 17px;
-  font-style: italic;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: Roboto;
   line-height: 150%;
   color: #414141;
+  text-decoration: none;
 }
 
 .shop-block-title:hover {
@@ -237,6 +243,7 @@ footer { /* футер */
     width: 100%;
     font-weight: 400;
     font-size: 17px;
+    background-color: #ff6d6d;
     color: #000000;
     padding: 10px;
     text-align: center;
@@ -253,48 +260,47 @@ footer { /* футер */
     transform: scale(1.05);
 }
 
+.shop-block-price
+{
+  font-family: Roboto;
+}
+
 /* ТУТ ПОШЛИ КОНТЕЙНЕРЫ ДЛЯ tp.html */
 
-.support-form-container {
+.container {
   max-width: 600px;
   margin: 50px auto;
-  padding: 20px;
   background-color: #fff;
+  padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-h2 {
-  color: #333;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-}
-
 label {
-  margin-top: 10px;
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
 }
 
-select,
-textarea,
-input {
-  margin-bottom: 15px;
-  padding: 8px;
+select, textarea, input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
   border: 1px solid #ccc;
   border-radius: 4px;
+  box-sizing: border-box;
 }
 
 button {
-  padding: 10px;
-  background-color: #007bff;
+  background-color: #ff6d6d;
   color: #fff;
+  padding: 12px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  font-size: 16px;
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #ff8484;
 }

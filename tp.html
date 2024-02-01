@@ -20,30 +20,33 @@
             </ul>
         </div>
         </header>
-        
-        <div class="support-form-container">
-            <h2>Техническая поддержка для вашего сайта</h2>
-    
-            <form action="submit_form" method="post">
-                <label for="questionType">Выберите тип вопроса:</label>
-                <select id="questionType" name="questionType" required>
-                    <option value="accountHelp">Помощь с аккаунтом</option>
-                    <option value="gameIssue">Игровая проблема</option>
-                    <option value="otherQuestion">Другой вопрос</option>
+
+        <body>
+
+            <div class="container">
+              <h2>Техническая поддержка</h2>
+              <form>
+                <label for="questionType">Выбор типа вопроса:</label>
+                <select id="questionType" name="questionType">
+                  <option value="accountHelp">Помощь с аккаунтом</option>
+                  <option value="gameIssue">Игровая проблема</option>
+                  <option value="other">Другое</option>
                 </select>
-    
-                <label for="message">Текст обращения:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-    
-                <h3>Как к вам обращаться?</h3>
-                <input type="text" id="contactName" name="contactName" placeholder="Ваше имя" required>
-    
-                <label for="email">Ваш email:</label>
-                <input type="email" id="email" name="email" placeholder="example@example.com" required>
-    
-                <button type="submit">Отправить вопрос</button>
-            </form>
-        </div>
+          
+                <label for="issueText">Текст обращения:</label>
+                <textarea id="issueText" name="issueText" rows="4"></textarea>
+          
+                <label for="contactName">Как к вам обращаться:</label>
+                <input type="text" id="contactName" name="contactName">
+          
+                <label for="contactEmail">Ваш email:</label>
+                <input type="email" id="contactEmail" name="contactEmail">
+          
+                <button type="button">Отправить</button>
+              </form>
+            </div>
+          
+          </body>
 
     <footer>
         <p>2024. Все права защищены законом.</p>
